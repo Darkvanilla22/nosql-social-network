@@ -1,7 +1,9 @@
 const router = require('express').Router(); // import the Express.js router
-const apiRoutes = require('./api'); // import the API routes
+const userRoutes = require('./api/userRoutes');
+const thoughtRoutes = require('./api/thoughtRoutes');
 
-router.use('/api', apiRoutes); // add the API routes
+router.use('/users', userRoutes);
+router.use('/thoughts', thoughtRoutes);
 
 router.use((req, res) => res.send('Wrong route!')); // add a fallback route
 
