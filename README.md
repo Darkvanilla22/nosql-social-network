@@ -39,7 +39,6 @@ After installing the Social Network API, you can run it using the following comm
 ```bash
 npm run start
 ```
-Follow the prompts to provide information about your project. Once you've answered all the questions, the application will generate a SVG file in the project directory.
 
 ## License
 
