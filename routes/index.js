@@ -1,10 +1,8 @@
-const router = require('express').Router(); // import the Express.js router
-const userRoutes = require('./api/userRoutes');
-const thoughtRoutes = require('./api/thoughtRoutes');
+const router = require('express').Router();
+const apiRoutes = require('./api');
 
-router.use('/users', userRoutes);
-router.use('/thoughts', thoughtRoutes);
+router.use('/api', apiRoutes);
 
-router.use((req, res) => res.send('Wrong route!')); // add a fallback route
+router.use((req, res) => res.send('Wrong route!'));
 
-module.exports = router; // export the router
+module.exports = router;
